@@ -1,0 +1,64 @@
+:root {
+  --bg-primary: #0a0c0f;
+  --bg-secondary: #111418;
+  --bg-card: #161b22;
+  --bg-hover: #1c2330;
+  --border: #2a3441;
+  --border-bright: #3d4f63;
+  --accent: #e8a020;
+  --accent-dim: #c47d10;
+  --accent-glow: rgba(232, 160, 32, 0.15);
+  --text-primary: #e8edf2;
+  --text-secondary: #8b9bb0;
+  --text-muted: #4a5568;
+  --green: #34d399;
+  --green-dim: rgba(52, 211, 153, 0.12);
+  --red: #f87171;
+  --blue: #60a5fa;
+  --pipe-orange: #f97316;
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--border-bright); border-radius: 3px; }
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input, select, textarea {
+  font-family: var(--font-body);
+  outline: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}
