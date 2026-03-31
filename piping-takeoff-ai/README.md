@@ -284,3 +284,8 @@ MIT — free for personal and commercial use.
 ---
 
 Built with React + Vite + Anthropic Claude AI + PDF.js + SheetJS
+
+# Initialize git
+git init
+
+
